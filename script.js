@@ -32,7 +32,7 @@ const requestBody = new URLSearchParams({
     body: requestBody,
   };
   
-  fetch(tokenEndpoint, fetchOptions)
+  await fetch(tokenEndpoint, fetchOptions)
     .then(response => response.json())
     .then(data => {
       localStorage.setItem('authToken', data);
