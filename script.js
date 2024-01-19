@@ -35,7 +35,7 @@ const requestBody = new URLSearchParams({
   fetch(tokenEndpoint, fetchOptions)
     .then(response => response.json())
     .then(data => {
-      // handle result...
+      localStorage.setItem('authToken', data);
       console.log(data);
     })
     .catch(error => console.error('Error:', error));
