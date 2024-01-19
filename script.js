@@ -11,12 +11,9 @@ const input = document.getElementById('input')
 const submit = document.getElementById('submit');
 const clientId = '2d4f86e4d4f6486d8e93e522c08cc7ff';
 const clientSecret = '402ca3f283c746d39a328033fb991363';
-const redirectUri = 'http://localhost:8888/callback';
+const redirectUri = 'https://henning-m.github.io/APItesting-public/';
 const tokenEndpoint = 'https://accounts.spotify.com/api/token';
 const authorizationCode = 'https://accounts.spotify.com/authorize?response_type=code&client_id=YOUR_CLIENT_ID&scope=[]&redirect_uri=YOUR_REDIRECT_URI'
-
-
-
 
 
 const requestBody = new URLSearchParams({
